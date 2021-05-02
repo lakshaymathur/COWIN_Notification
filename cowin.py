@@ -6,7 +6,10 @@ from notify_run import Notify
 
 date_range = ['01-05-2021','08-05-2021','15-05-2021','22-05-2021','29-05-2021'] #Range of dates you want to search
 notify=Notify()
-district_id = 188 #Id of the district, 188 is gurgaon, find this on cowin portal. check networks tab. 
+notify.register()
+district_id = 188 # District id. Refer to DISTRICTS file.
+polling_rate = 30
+
 
 def make_request(date1):
     try:
@@ -61,7 +64,7 @@ def main():
     while(1):
         print(datetime.now().strftime("%H:%M:%S") + ' :: '+ "Checking Now...") # Prints on Console
         find_me_vaccine()
-        time.sleep(30) 
+        time.sleep(polling_rate) 
 
 
 if __name__ == "__main__":
