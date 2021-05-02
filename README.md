@@ -9,9 +9,9 @@ The script is pretty straight forward.
 
 Variables and usage:
 
-district: a district code. Refer to districts.txt file to find your district code.
-date_range: define for which weeks you want to search appoitments. 01-05-2021 means the week from 01-05-2021 to 07-05-2021
-polling_rate: is defined in seconds(recommended: >20s). How often one would want to search. Please don't keep it very low as this is a public API for public welfare. Do not put any unecessary load on these APIs. I will not be responsible for anything which happens if you don't heed this warning. 
+**district**: a district code. Refer to **districts** file to find your district code.
+**date_range**: define for which weeks you want to search appoitments. 01-05-2021 means the week from 01-05-2021 to 07-05-2021
+**polling_rate**: is defined in seconds(**recommended: >20s**). How often one would want to search. Please don't keep it very low as this is a public API for public welfare. Do not put any unecessary load on these APIs. I will not be responsible for anything which happens if you don't heed this warning. 
 
 
 
